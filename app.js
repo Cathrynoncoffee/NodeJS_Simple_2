@@ -29,10 +29,12 @@ var appEnv = cfenv.getAppEnv();
  * base address http://MYSERVERNAME.mybluemix.net/
 **/
 var userCount = 0;
+var usrerbytwo =0;
 /* add var definition for your new variable, userbytwo here */
 
 app.get('/', function(req, res){
   userCount = userCount + 1;
+  userbytwo=userbytwo+2;
   /* add statement to increment userbytwo by two here */
   res.render('index', {userCount: userCount}); /* update this line to also pass userbytwo */
 });
